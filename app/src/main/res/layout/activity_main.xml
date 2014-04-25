@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.bazted.zxingtest.app.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/contrast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="contrast"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="brightness"
+            android:inputType="numberSigned" />
+
+        <CheckBox
+            android:id="@+id/grey_scale_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="grey scale" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/origin_bitmap_image"
+            android:text="@string/hello_world"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:contentDescription="bred" />
+
+        <ImageView
+            android:id="@+id/effected_bitmap_image"
+            android:text="@string/hello_world"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:contentDescription="bred" />
+
+    </LinearLayout>
+</LinearLayout>

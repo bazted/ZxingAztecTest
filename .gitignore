@@ -1,0 +1,9 @@
+build
+.idea
+*.iml
+local.properties
+.gradle
+gradlew
+gradlew.bat
+atlassian-ide-plugin.xml
+
